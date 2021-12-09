@@ -61,10 +61,7 @@ function Search() {
   let card_title;
   let input = document.querySelector("#Input");
   let cardcontainer = document.querySelector("#product");
-  let cards = cardcontainer.querySelector(".container .row .col-lg-3 .card");
-  let p=document.getElementById("p");
-  p.textContent=cards.length
-  console.log(cards.length)
+  let cards = cardcontainer.querySelectorAll(".container .row .col-lg-3");
   for (let i = 0; i < cards.length; i++) {
     card_title = cards[i].querySelector(".card-title");
     console.log(input.value.toUpperCase())
